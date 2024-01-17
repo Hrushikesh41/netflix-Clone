@@ -10,7 +10,9 @@ env.config({path : 'config.env'});
 
 const port = process.env.PORT || 3000;
 
-app.post("/", (req, res) => {
+app.use(require("./routes/register"));
+
+app.get("/", (req, res) => {
     res.send("Hello Streamers")
 });
 
