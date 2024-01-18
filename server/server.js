@@ -11,6 +11,7 @@ env.config({path : 'config.env'});
 const port = process.env.PORT || 3000;
 
 app.use(require("./routes/register"));
+app.use(require("./routes/getUsers"));
 
 app.get("/", (req, res) => {
     res.send("Hello Streamers")
