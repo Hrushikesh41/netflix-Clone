@@ -12,6 +12,7 @@ const port = process.env.PORT || 3000;
 
 app.use(require("./routes/register"));
 app.use(require("./routes/getUsers"));
+app.use(require("./routes/updatePassword"));
 
 app.get("/", (req, res) => {
     res.send("Hello Streamers")
